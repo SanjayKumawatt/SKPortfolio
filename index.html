@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumawat - A Web Developer</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="Portfolio.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="body">
+        <header class="header">
+            <nav>
+                <div class="nav_part1">
+                    <div id="logo"><a href=""><img src="Sanjay Kumwat Web Developer Logo.png" alt="error"
+                                style="height: 19vh;"></a>
+                    </div>
+                </div>
+                <div class="nav_part2">
+                    <button class="menu_button">
+                        <div id="menuLine1"></div>
+                        <div id="menuLine2"></div>
+                    </button>
+                    
+                    <div class="menu_ul">
+                        <ul>
+                            <li id="Home">Home</li>
+                            <li id="Project">Projects</li>
+                            <li id="Skills">Skills</li>
+                            <li id="Email">Email</li>
+                        </ul>
+                    </div>
+                    
+
+
+                    <div class="ul">
+                        <ul>
+                            <li id="Home-button">Home</li>
+                            <li id="Project-button"> Projects</li>
+                            <li id="Skills-button">Skills</li>
+                            <li id="Email-button">Email</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main_part1">
+                <div id="details">
+                    <div class="photo">
+                        <img src="SK Photo.png" alt="Error">
+                    </div>
+                    <div class="whoIAm">
+                        <h1>I'm <p>Sanjay</p> a <p>Web Developer</p>
+                        </h1>
+                        <p id="whoIAmp" style="font-family: paragraphFont; line-height: 4vh; color: #464646;">I build
+                            beautiful
+                            and
+                            functional websites using HTML, CSS, and JavaScript. I love creating clean UIs, smooth
+                            user
+                            experiences, and engaging animations with GSAP. I'm passionate about web design that not
+                            only looks great but also feels intuitive and fast.</p>
+
+                    </div>
+                    <div class="viewProjects">
+                        <p> View Projects</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="main_part2">
+                <div class="box">
+                    <div class="box-Line1">
+                        <div class="box1"></div>
+                        <p> I will add Project 1 soon.</p>
+                    </div>
+                    <div class="box-Line2">
+                        <div class="box2"></div>
+                        <p>I will add Project 2 soon.</p>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="box-Line3">
+                        <div class="box3"></div>
+                        <p>I will add Project 3 soon.</p>
+
+                    </div>
+                    <div class="box-Line4">
+                        <div class="box4"></div>
+                        <p>I will add Project 4 soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_part3">
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="string" style="width: 100%; height: 200px;">
+                        <svg width="100%" height="100%" viewBox="0 0 1200 200" preserveAspectRatio="none">
+                            <path d="M 10 100 Q 250 100 1200 100" stroke="black" fill="transparent" stroke-width="3" />
+                        </svg>
+                    </div>
+
+
+                    <p>I turn ideas into smooth, good-looking products. I love working on Web Design, UI/UX, and
+                        building fast and smooth animations.
+                    </p>
+
+                    <div class="skill-Container1">GSAP Animation</div>
+                    <div class="skill-Container2">UI/UX</div>
+                    <div class="skill-Container3">Responsive Design</div>
+                    <div class="skill-Container4">JavaScript</div>
+                    <div class="skill-Container5">HTML5</div>
+                    <div class="skill-Container6">CSS3</div>
+                </div>
+
+                <div id="Email-Section">
+                    <div class="mail-Box">
+                        <div class="Email-Me">Email Me</div>
+                        <form id="contact-form">
+                            <input type="text" name="user_name" placeholder="Your Name" id="input">
+                            <input type="text" name="user_email" placeholder="Your Email" id="input">
+                            <textarea name="message" id="textarea" placeholder="Your Message"></textarea>
+                            <p>If you like my work and want to collaborate, feel free to message me.</p>
+                            <button id="submitButton" type="submit">
+                                <p>Send Email</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="main_part4" style="pointer-events: none;"></div>
+    <div class="footer">
+        <div class="footer_div_part1">
+            <div class="iAmAvailable">
+                <div class="availability-wrapper">
+                    <span class="line"></span>
+                    <p>I'm available</p>
+                    <span class="line"></span>
+                </div>
+                <div class="letsconnect">Let's <p style="font-family:  instrumental serif italic ;     color: #a0a0a0;
+margin-left: 1vw;"> Connect </p>
+                </div>
+                <div id="feel_free">Feel free to contact me.
+                    I'm
+                    available for new projects.</div>
+            </div>
+        </div>
+        <div class="footer_div_part2">
+            <div id="footerlogo"><a href=""><img src="footer logo.png" alt="error"></a>
+            </div>
+           
+
+
+            <a id="githubLink" href="https://www.linkedin.com/in/sanjay-kumawat-24479029a" target="_blank">
+                <button class="linkedin-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                    Sanjay Kumawat
+                </button>
+            </a>
+
+            <a id="githubLink" href="https://www.upwork.com/freelancers/~01ec1e18dd045910d2" target="_blank">
+                <button class="upwork-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M17.47 6.07a4.54 4.54 0 0 0-4.38 3.69 19.9 19.9 0 0 1-2.28-4.9H8.55v6a2.14 2.14 0 1 1-4.28 0v-6L2 4.91v6a4.4 4.4 0 1 0 8.8-.05v-1a20.55 20.55 0 0 0 1.65 2.7l-1.38 6.61h2.32l1-4.81a5.61 5.61 0 0 0 3.11.89 4.57 4.57 0 0 0 0-9.14zm0 6.83a4.09 4.09 0 0 1-2.55-1l.23-.91v-.05c.16-1 .66-2.6 2.35-2.6a2.25 2.25 0 0 1 2.27 2.24 2.41 2.41 0 0 1-2.27 2.32z"></path></svg>
+                    Upwork
+                </button>
+            </a>
+
+            <a id="githubLink" href="https://github.com/SanjayKumawatt" target="_blank">
+                <button class="github_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    Github
+                </button>
+            </a>
+        </div>
+        <p> © 2025 Sanjay Kumawat. All rights reserved.</p>
+    </div>
+</body>
+
+
+<!-- Apni JavaScript File -->
+<script src="Portfolio.js"></script>
+
+
+</html>
